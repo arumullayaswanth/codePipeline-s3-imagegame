@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meme Matching Game</title>
+    <title>Images Matching Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>MEME MATCHING GAME</h1>
-        <p class="instructions">
-            Welcome to the Meme Matching Game!  Flip over two cards at a time and try to find all the matching pairs. Be quick and remember where you saw the cards!
-        </p>
-        <button id="start-game">Start Game</button>
+        <header class="hero">
+            <p class="eyebrow">Memory challenge</p>
+            <h1>Images Matching Game</h1>
+            <p class="instructions">
+                Flip two cards at a time and find all the matching pairs. Stay sharp and track the patterns.
+            </p>
+            <button id="start-game" class="primary">Start Game</button>
+        </header>
         <div id="game-board" class="game-board">
             <!-- Cards will be generated here -->
         </div>
+        <footer class="footer">Tip: Focus on the corners first.</footer>
     </div>
     <script src="script.js"></script>
 </body>

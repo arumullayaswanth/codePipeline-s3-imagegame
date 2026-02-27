@@ -1,26 +1,31 @@
-# Continuous Deployment using AWS Code Pipeline and S3
+# Images Matching Game
 
-This repo contains the code files used in this [YouTube video](https://youtu.be/biYVW1TMYAU).
+A clean, responsive memory game built with HTML, CSS, and JavaScript. Flip two cards at a time and match all the image pairs.
 
-## TL;DR
-Code for a game is hosted in GitHub.  We create an S3 bucket for static website hosting, then create a continuous deployment pipeline (using AWS Code Pipeline) to automatically deploy the code whenever changes are made.
+![Screenshot](image.png)
 
-## The Game
-A simple memory matching game.  The user clicks two cards (images of memes) to try to match them.  If there's a match, the cards disappear from the board.  If there's no match, the cards are flipped back to their blank side so the user can try again.
+## Features
+- Lightweight static site (no build step)
+- Responsive layout for desktop and mobile
+- Simple, fast gameplay loop
 
-The game consists of HTML, CSS and JavaScript.
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
 
-Ideas for additional features:
-- A scoring mechanism
-- A timer
-- Add additional cards
-- Multi-player capabilities so you can compare scores 
+## Run Locally
+1. Open `index.html` in a browser.
 
-## The Deployment Environment
-The code will be deployed and hosted in S3.
+## Demo Video
+Watch the full walkthrough: 
 
-## The Deployment Pipeline
-The pipeline is created using AWS Code Pipeline.  The pipeline pulls the code from GitHub, and deploys it to S3 whenever a change is detected in the code.
+## Deploy
+For an AWS S3 + CodePipeline deployment guide, see `DEPLOYMENT_AWS.md`.
 
-## Cost
-All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
+## Project Structure
+- `index.html` - UI markup
+- `styles.css` - UI styling
+- `script.js` - game logic
+- `images/` - game images
+- `image.png` - project screenshot
